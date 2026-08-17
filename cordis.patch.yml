@@ -1,0 +1,8 @@
+# dsh-plugin-guide — bundle patch layer.
+# Composes over an EMPTY entry list (launcher composition), so `insert`.
+- insert:
+    - id: plugin-guide
+      name: 'dsh-plugin-guide'
+      config:
+        limit: 5
+        sectionOrder: 5

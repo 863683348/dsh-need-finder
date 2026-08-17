@@ -1,0 +1,42 @@
+{
+  "name": "dsh-plugin-guide",
+  "version": "0.1.0",
+  "description": "Requirement-driven dsh plugin discovery ('点菜, not 逛超市'): a plugin_guide tool that semantically matches natural-language needs to a curated plugin directory with reasons and install commands",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./match": "./lib/match.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md"
+  ],
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "plugin",
+    "plugin-finder",
+    "semantic-search",
+    "guide"
+  ],
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-system-prompt": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}
