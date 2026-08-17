@@ -1,6 +1,22 @@
 # Contributing
 
-- `lib/match.js` is dependency-free logic (tokenize/score/search); `lib/guide-data.json` is pure data.
-- `lib/index.js` is the Cordis plugin.
-- Run `node test/match.test.mjs` (main-module mode under the DSH sandbox).
-- Add curated entries by editing `lib/guide-data.json`.
+## Development
+
+```bash
+node --test test/          # unit tests (main-module mode under the DSH sandbox)
+```
+
+## Code style
+
+- Plain JavaScript (ESM), no TypeScript, no bundler.
+- Pure logic modules stay dependency-free and unit-tested in isolation.
+- New behavior needs a unit test.
+
+## Releasing
+
+Bump `version` in `package.json`, update `CHANGELOG.md`, then:
+
+```bash
+npm version patch -m "chore: release v%s"
+git push --tags           # CI publishes to npm automatically
+```
