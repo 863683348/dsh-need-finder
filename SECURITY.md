@@ -1,7 +1,10 @@
 # Security
 
-- `dsh-need-finder` is fully local: no network requests, no file writes, no secrets.
-- The bundled directory is public data from awesome-dsh-plugin.
-- Review the source before installing, as with any dsh bundle.
+## Trust model
 
-Report issues in this repository.
+This plugin runs as a host-side Cordis plugin in the DeepSeek Harness process
+with the same trust level as any installed bundle — review the source first.
+
+## Reporting a vulnerability
+
+Open an issue in this repository. There is no private disclosure channel yet.
