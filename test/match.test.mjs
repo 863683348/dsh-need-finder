@@ -73,3 +73,19 @@ test("scorePlugin returns structured hits", () => {
   assert.ok(typeof s.score === "number");
   assert.ok(Array.isArray(s.hits));
 });
+
+
+test("search handles CJK mixed with latin needs", () => {
+  const results = search("我想在手机上看 DSH 的 web 界面", plugins, 3);
+  assert.ok(results.length > 0);
+});
+
+test("search caps limit at 10", () => {
+  const results = search("notification sound alert", plugins, 100);
+  assert.ok(results.length <= 10);
+});
+
+test("loadPlugins entries all have valid categories", () => {
+  const valid = new Set(["ui","theme","model","session","memory","tools","skill","workflow","notify","dev","market","fun","usage","vision"]);
+  for (const p of plugins) assert.ok(valid.has(p.category), "category valid: " + p.name);
+});
