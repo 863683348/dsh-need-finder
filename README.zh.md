@@ -47,6 +47,10 @@ dsh plugin --profile <profile名> add dsh-need-finder
 
 `recipe action=list` 看全部；`recipe action=search need="手机远程"` 按需求找配方；`recipe action=apply id=notify-suite` 输出按依赖顺序排列的 `dsh plugin add` 命令（DAG 友好，可被工作流/编排引擎消费）。配方数据在 `lib/recipes.json`，可自行增删。
 
+## 与 dsh-recipe 的关系
+
+本插件内置 8 个精选配方（导购为主）；如果你需要更专注的配方能力（列表/搜索/应用/组合自定义环境），可单独安装 [dsh-recipe](https://github.com/863683348/dsh-recipe)（`dsh plugin add dsh-recipe`）。两者互补并行。
+
 ## License
 
 MIT

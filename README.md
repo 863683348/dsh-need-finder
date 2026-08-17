@@ -71,6 +71,10 @@ node test/match.test.mjs
 
 `recipe action=list` 看全部；`recipe action=search need="手机远程"` 按需求找配方；`recipe action=apply id=notify-suite` 输出按依赖顺序排列的 `dsh plugin add` 命令（DAG 友好，可被工作流/编排引擎消费）。配方数据在 `lib/recipes.json`，可自行增删。
 
+## Relationship to dsh-recipe
+
+This plugin bundles 8 curated recipes (guide-first). If you want a dedicated recipe tool (list/search/apply/compose custom environments), install [dsh-recipe](https://github.com/863683348/dsh-recipe) separately (`dsh plugin add dsh-recipe`). The two complement each other.
+
 ## License
 
 MIT
