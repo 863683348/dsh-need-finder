@@ -4,7 +4,4 @@
 
 Initial release.
 
-- `plugin_guide` tool: requirement-driven plugin discovery ("点菜, not 逛超市").
-- Curated directory: 84 real plugins across 14 categories (sampled from awesome-dsh-plugin's 1019 entries).
-- Local semantic scoring: English terms + Chinese substrings + category lexicon; zero network/LLM deps.
-- 10 unit tests.
+- Requirement-driven dsh plugin discovery (点菜, not 逛超市): plugin_guide matches natural-language needs to a curated directory with reasons and install commands
