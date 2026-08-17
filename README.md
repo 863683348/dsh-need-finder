@@ -53,6 +53,24 @@ dsh plugin --profile <profile> add dsh-need-finder     # npm 发布后
 node test/match.test.mjs
 ```
 
+
+## Recipes — 插件界的 dotfiles
+
+从"装单个"到"装环境"：`recipe` 工具内置 8 个社区配方（JSON：插件清单 + 安装顺序 + 配置说明），一键生成整套有序安装计划：
+
+| id | 套装 |
+| --- | --- |
+| `notify-suite` | 通知全家桶 |
+| `security-audit` | 安全审计套装 |
+| `remote-mobile` | 移动远程套装 |
+| `dev-tools` | 开发效率套装 |
+| `memory-set` | 记忆与上下文套装 |
+| `im-bridge` | IM 桥接（三选一） |
+| `vision-lab` | 视觉实验室 |
+| `research-stack` | 浏览器研究环境 |
+
+`recipe action=list` 看全部；`recipe action=search need="手机远程"` 按需求找配方；`recipe action=apply id=notify-suite` 输出按依赖顺序排列的 `dsh plugin add` 命令（DAG 友好，可被工作流/编排引擎消费）。配方数据在 `lib/recipes.json`，可自行增删。
+
 ## License
 
 MIT
