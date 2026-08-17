@@ -2,7 +2,7 @@
 # Composes over an EMPTY entry list (launcher composition), so `insert`.
 - insert:
     - id: plugin-guide
-      name: 'dsh-plugin-guide'
+      name: 'dsh-need-finder'
       config:
         limit: 5
         sectionOrder: 5

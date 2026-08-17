@@ -1,4 +1,4 @@
-# dsh-plugin-guide — 需求型插件导购
+# dsh-need-finder — 需求型插件导购
 
 **"点菜，不是逛超市。"** 现有 DSH 插件市场都是按名称/分类浏览；本插件让 agent 直接听懂你的**需求**，从精选目录里语义匹配最合适的插件，给出匹配理由和安装命令。
 
@@ -11,7 +11,7 @@
 ## 安装
 
 ```bash
-dsh plugin --profile <profile名> add dsh-plugin-guide
+dsh plugin --profile <profile名> add dsh-need-finder
 ```
 
 ## 用法
