@@ -1,0 +1,8 @@
+{
+  "need": "任务完成时通知我",
+  "top": [
+    { "name": "aokamoaki/dsh-notify", "category": "notify" },
+    { "name": "CAOGGL/dsh-ding", "category": "notify" },
+    { "name": "THEWOLFWALKER/dsh-notifier", "category": "notify" }
+  ]
+}
