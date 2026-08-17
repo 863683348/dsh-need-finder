@@ -1,7 +1,7 @@
 {
   "name": "dsh-need-finder",
-  "version": "0.1.0",
-  "description": "Requirement-driven dsh plugin discovery ('点菜, not 逛超市'): a plugin_guide tool that semantically matches natural-language needs to a curated plugin directory with reasons and install commands",
+  "version": "0.2.0",
+  "description": "Requirement-driven dsh plugin discovery and environment recipes ('点菜, not 逛超市' / 插件界的 dotfiles): plugin_guide matches natural-language needs to a curated directory; recipe installs whole environments from bundled community bundles with ordered plans",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -43,5 +43,13 @@
     "@deepseek-ai/dsh-system-prompt": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
     "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/863683348/dsh-need-finder.git"
+  },
+  "homepage": "https://github.com/863683348/dsh-need-finder#readme",
+  "bugs": {
+    "url": "https://github.com/863683348/dsh-need-finder/issues"
   }
 }
